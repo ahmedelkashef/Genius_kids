@@ -1,16 +1,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.Manifest.app.MainActivity"
-    >
+    tools:context="com.example.android.Manifest.app.MainActivity" >
 
 
 <!-- "Mark Favorite", should appear as action button if possible -->
     <item
         android:title="@string/aboutus"
-        android:id="@+id/action_favorite"
-        android:icon="@drawable/navigation"
-        android:showAsAction="always"
+        android:id="@+id/about_us"
+        android:icon="@drawable/ic_launcher"
+        app:showAsAction="always"
         />
 
 
