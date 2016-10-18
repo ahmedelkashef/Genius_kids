@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
     private ListView mDrawerList;
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.btn, menu);
+        return true;
+    }
+
+    @Override
    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -37,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new about_usAdapter(this, Arrays.asList(mPlanetTitles));
         mDrawerList.setAdapter(adapter);
-        
+
         // Set the list's click listener
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

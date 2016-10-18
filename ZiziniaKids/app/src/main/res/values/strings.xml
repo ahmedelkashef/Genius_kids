@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Genius Kids</string>
     <string name="title_activity_login">Sign in</string>
-
+    <string name="aboutus">About us</string>aboutus
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
